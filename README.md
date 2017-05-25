@@ -60,3 +60,8 @@ Secrets.GOOGLE_MAPS_API_KEY  // 'abcdefgh'
 
 The `.env` file is ignored by git keeping those secrets out of your repo.
 
+
+# Rewrite the navigation logic with store using 
+  # https://github.com/junedomingo/movieapp/blob/master/src/app.ios.js
+  # https://wix.github.io/react-native-navigation/#/usage
+
