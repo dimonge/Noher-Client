@@ -1,39 +1,45 @@
-import { PixelRatio } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { PixelRatio } from 'react-native'
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
 const navIconSize = (__DEV__ === false && Platform.OS === 'android') ? PixelRatio.getPixelSizeForLayoutSize(40) : 40; // eslint-disable-line
-const replaceSuffixPattern = /--(active|big|small|very-big)/g;
+const replaceSuffixPattern = /--(active|big|small|very-big)/g
 
 const icons = {
-	'ios-home-outline': [30],
-	'ios-home': [30],
-	'ios-desktop-outline': [30],
-	'ios-desktop': [30],
-	'ios-search': [30],
-	'ios-arrow-round-down': [navIconSize],
-	'ios-close': [40]
-};
+  'ios-home-outline': [30],
+  'ios-home': [30],
+  'ios-add-outline': [30],
+  'ios-add': [30],
+  'ios-search': [30],
+  'ios-arrow-round-down': [navIconSize],
+  'ios-close': [40],
+  'ios-settings-outline': [30],
+  'ios-checkmark-circle-outline': [30],
+  'ios-grid': [30],
+  'ios-grid-outline': [30],
+  'ios-add-circle-outline': [30],
+  'ios-add-circle': [30]
 
-const iconsMap = {};
+}
+
+const iconsMap = {}
 const iconsLoaded = new Promise((resolve, reject) => {
-	new Promise.all(
-		Object.keys(icons).map(iconName =>
-		// IconName--suffix--other-suffix is just the mapping name in iconsMap
-		Ionicons.getImageSource(
-		iconName.replace(replaceSuffixPattern, ''),
-		icons[iconName][0],
-		icons[iconName][1]
-		))
-	).then(sources => {
-		Object.keys(icons)
-		.forEach((iconName, idx) => (iconsMap[iconName] = sources[idx]));
+  Promise.all(
+    Object.keys(icons).map(iconName =>
+    // IconName--suffix--other-suffix is just the mapping name in iconsMap
+      Ionicons.getImageSource(
+      iconName.replace(replaceSuffixPattern, ''),
+      icons[iconName][0],
+      icons[iconName][1]))
+    ).then(sources => {
+      Object.keys(icons)
+      .forEach((iconName, idx) => (iconsMap[iconName] = sources[idx]))
 
-		// Call resolve (and we are done)
-		resolve(true);
-	});
-});
+    // Call resolve (and we are done)
+      resolve(true)
+    })
+})
 
 export {
-	iconsMap,
-	iconsLoaded
-};
+  iconsMap,
+  iconsLoaded
+}

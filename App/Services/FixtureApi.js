@@ -20,5 +20,12 @@ export default {
       ok: true,
       data: username.toLowerCase() === 'gantman' ? gantmanData : skellockData
     }
+  },
+  getTodos: () => {
+    const todos = require('../Fixtures/todos.json')
+    return {
+      ok: true,
+      data: todos
+    }
   }
 }

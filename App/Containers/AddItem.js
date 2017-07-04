@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-import Fields from '../Components/Fields';
+import Fields from '../Components/Fields'
 
 class AddItem extends Component {
-  render() {
-    return <Fields {...this.props}/>
+  render () {
+    return <Fields {...this.props} />
   }
 }
 
@@ -20,4 +20,4 @@ const mapDispatchToProps = (dispatch) => {
 
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(AddItem);
+export default connect(mapStateToProps, mapDispatchToProps)(AddItem)

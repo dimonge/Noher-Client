@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   View
-} from 'react-native';
+} from 'react-native'
 
 export default class Fields extends Component {
-  render() {
+  render () {
     return <View />
   }
 }
