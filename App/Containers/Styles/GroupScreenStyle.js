@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { ApplicationStyles, Metrics, Colors } from '../../Themes'
+import { ApplicationStyles, Metrics, Colors, Fonts } from '../../Themes'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
@@ -13,7 +13,7 @@ export default StyleSheet.create({
     width: Metrics.screenWidth / 2 - 20,
     height: 200,
     justifyContent: 'center',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     margin: Metrics.baseMargin,
     backgroundColor: 'white',
     borderRadius: Metrics.smallMargin,
@@ -37,19 +37,26 @@ export default StyleSheet.create({
     backgroundColor: 'whitesmoke'
   },
   boldLabel: {
-    fontWeight: '400',
+    ...Fonts.style.h5,
+    fontWeight: '500',
     alignSelf: 'center',
     textAlign: 'center',
     marginBottom: Metrics.smallMargin
   },
   label: {
+    ...Fonts.style.h4,
     alignSelf: 'center',
     color: Colors.text,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: '500'
   },
   listContent: {
     justifyContent: 'flex-start',
     flexDirection: 'row',
     flexWrap: 'wrap'
+  },
+  iconStyle: {
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })

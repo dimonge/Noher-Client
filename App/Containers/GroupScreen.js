@@ -4,9 +4,10 @@ import { connect } from 'react-redux'
 import PlusIcon from '../Components/PlusIcon'
 // For empty lists
 // import AlertMessage from '../Components/AlertMessage'
-
+import Icon from 'react-native-vector-icons/Ionicons'
 // Styles
 import styles from './Styles/GroupScreenStyle'
+import { Colors } from '../Themes'
 
 class GroupScreen extends React.Component {
   state: {
@@ -23,13 +24,12 @@ class GroupScreen extends React.Component {
     * Usually this should come from Redux mapStateToProps
     *************************************************************/
     const dataObjects = [
-      {title: 'Grocery', description: 'First Description'},
-      {title: 'Home', description: 'Second Description'},
-      {title: 'Invitation list', description: 'Third Description'},
-      {title: 'Work', description: 'Fourth Description'},
-      {title: 'Party', description: 'Fifth Description'},
-      {title: 'Wedding', description: 'Sixth Description'},
-      {title: 'Movies', description: 'Seventh Description'},
+      {title: 'Grocery', description: 'First Description', icon: 'ios-basket-outline'},
+      {title: 'Home', description: 'Second Description', icon: 'ios-home-outline'},
+      {title: 'Invitation list', description: 'Third Description', icon: 'ios-people-outline'},
+      {title: 'Work', description: 'Fourth Description', icon: 'ios-filing-outline'},
+      {title: 'Travel', description: 'Fifth Description', icon: 'ios-plane-outline'},
+      {title: 'Wedding', description: 'Sixth Description', icon: 'ios-cart-outline'},
       {title: 'Create Group', create: true}
     ]
 
@@ -73,6 +73,7 @@ class GroupScreen extends React.Component {
     return (
       <TouchableHighlight onPress={this._onOpenGroup}>
         <View style={styles.row}>
+          <Icon style={styles.iconStyle} name={rowData.icon} size={30} color={Colors.button} />
           <Text style={styles.boldLabel}>{rowData.title}</Text>
           {/* <Text style={styles.label}>{rowData.description}</Text> */}
         </View>

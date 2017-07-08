@@ -3,10 +3,10 @@ import { Colors, Metrics, Fonts } from '../../Themes/'
 
 export default StyleSheet.create({
   rowContainer: {
-    flex: 0.5,
+    // flex: 0.5,
     flexDirection: 'row',
     width: Metrics.screenWidth - 10,
-    height: Metrics.itemHeight,
+    // height: Metrics.itemHeight,
     margin: Metrics.smallMargin,
     shadowColor: Colors.border,
     shadowOffset: {
@@ -16,10 +16,12 @@ export default StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 1,
     paddingLeft: Metrics.baseMargin,
-    paddingRight: Metrics.baseMargin,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: Colors.transparent
+    backgroundColor: Colors.transparent,
+    paddingBottom: Metrics.smallMargin,
+    paddingTop: Metrics.smallMargin,
+    paddingRight: Metrics.itemHeight
   },
   checkbox: {
     height: 15,
@@ -29,6 +31,10 @@ export default StyleSheet.create({
   },
   taskStyle: {
     ...Fonts.style.h5,
-    marginLeft: Metrics.marginHorizontal
+    marginLeft: Metrics.marginHorizontal,
+    flexWrap: 'wrap',
+    marginTop: Metrics.baseMargin,
+    marginBottom: Metrics.baseMargin
+    // flex: 0.75
   }
 })

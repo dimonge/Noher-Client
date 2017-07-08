@@ -4,41 +4,41 @@
   "current_page": 1,
   "items_per_page": 10,
   "items": [
-    {      
+    {
       "id": 68273,
       "task": "Buy rice from K-market"
     },
-    {      
+    {
       "id": 21302,
       "task": "Tooth paste"
     },
-    {      
+    {
       "id": 134314,
       "task": "Give 10 euros to Sis"
     },
-    {      
+    {
       "id": 413414,
-      "task": "Watch movies on saturday"
+      "task": "Watch movies on saturday and travel to kuopio on Monday, travel to kuopio on Monday"
     },
-    {      
+    {
       "id": 3141454,
       "task": "Travel on Saturday"
     },
-    {      
+    {
       "id": 123124,
       "task": "Pay tithe"
     },
-    {      
+    {
       "id": 13148,
       "task": "Move to new apartment"
     },
-    {      
+    {
       "id": 1431431,
       "task": "Host the church event"
     },
-    {      
+    {
       "id": 6827313,
       "task": "Call Mom"
-    }    
+    }
   ]
 }
