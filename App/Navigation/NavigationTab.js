@@ -22,7 +22,9 @@ const navigatorStyle = {
   drawUnderTabBar: true
 }
 
+
 export default class NavigationTab extends React.Component {
+
   constructor (props) {
     super(props)
     iconsLoaded.then(() => {
@@ -58,10 +60,10 @@ export default class NavigationTab extends React.Component {
         },
         {
           // label: 'Add Item',
-          screen: 'maTodo.Group',
-          icon: iconsMap['ios-add-circle-outline'],
-          selectedIcon: iconsMap['ios-add-circle'],
-          title: 'Group',
+          screen: 'maTodo.AddTask',
+          icon: require('../Images/add-circle-outline.png'),
+          selectedIcon: require('../Images/add-circle.png'),
+          title: 'Add New Task',
           navigatorStyle
         },
         {
@@ -70,7 +72,16 @@ export default class NavigationTab extends React.Component {
           icon: iconsMap['ios-grid-outline'],
           selectedIcon: iconsMap['ios-grid'],
           title: 'Group',
-          navigatorStyle
+          navigatorStyle,
+          navigatorButtons: {
+            rightButtons: [
+              {
+                title: 'settings',
+                id: 'settings',
+                icon: iconsMap['ios-settings-outline']
+              }
+            ]
+          }
         }
       ],
       tabsStyle: {

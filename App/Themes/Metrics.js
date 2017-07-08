@@ -19,6 +19,7 @@ const metrics = {
   tabBarHeight: (Platform.OS === 'ios') ? 50 : 50,
   itemHeight: 50,
   buttonRadius: 4,
+  borderBottomWidth: 1,
   icons: {
     tiny: 15,
     small: 20,

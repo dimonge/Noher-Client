@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { Colors, Metrics } from '../../Themes/'
+import { Colors, Metrics, Fonts } from '../../Themes/'
 
 export default StyleSheet.create({
   rowContainer: {
@@ -10,24 +10,25 @@ export default StyleSheet.create({
     margin: Metrics.smallMargin,
     shadowColor: Colors.border,
     shadowOffset: {
-      width: 1,
-      height: 1
+      width: 0.5,
+      height: 0.5
     },
     shadowOpacity: 1,
     shadowRadius: 1,
     paddingLeft: Metrics.baseMargin,
     paddingRight: Metrics.baseMargin,
     justifyContent: 'flex-start',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: Colors.transparent
   },
   checkbox: {
-    height: 10,
-    width: 10,
+    height: 15,
+    width: 15,
     borderWidth: 2,
-    borderRadius: 2,
     borderColor: Colors.border
   },
   taskStyle: {
+    ...Fonts.style.h5,
     marginLeft: Metrics.marginHorizontal
   }
 })

@@ -20,7 +20,6 @@ class TabBar extends Component {
     return (
       <Tabs>
         <Tab
-          titleStyle={{fontWeight: 'bold', fontSize: 10}}
           selectedTitleStyle={{marginTop: -1, marginBottom: 6}}
           selected={selectedTab === 'feed'}
           title={selectedTab === 'feed' ? 'FEED' : null}
@@ -30,7 +29,6 @@ class TabBar extends Component {
           <List />
         </Tab>
         <Tab
-          titleStyle={{fontWeight: 'bold', fontSize: 10}}
           selectedTitleStyle={{marginTop: -1, marginBottom: 6}}
           selected={selectedTab === 'profile'}
           title={selectedTab === 'profile' ? 'PROFILE' : null}

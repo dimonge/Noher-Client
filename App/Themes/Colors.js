@@ -2,7 +2,7 @@ const colors = {
   background: '#FAFAFA',
   clear: 'rgba(0,0,0,0)',
   facebook: '#3b5998',
-  transparent: 'rgba(0,0,0,0)',
+  transparent: 'rgba(255, 255, 255, 1)',
   silver: '#F7F7F7',
   steel: '#CCCCCC',
   error: 'rgba(200, 0, 0, 0.8)',
@@ -19,10 +19,11 @@ const colors = {
   fire: '#e73536',
   drawer: 'rgba(30, 30, 29, 0.95)',
   eggplant: '#251a34',
-  border: '#483F53',
+  border: 'rgba(0, 0, 0, 0.1)',
   banner: '#5F3E63',
   text: '#E0D7E5',
-  lightgray: '#d3d3d3'
+  lightgray: '#d3d3d3',
+  button: '#1DE9B6'
 }
 
 export default colors

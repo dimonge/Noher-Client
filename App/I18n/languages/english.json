@@ -23,5 +23,7 @@
    "deviceDetails": "Device Details",
    "noItems": "No Items",
    "search": "Search",
-   "noTask": "No more tasks for today"
+   "noTask": "No more tasks for today",
+   "taskInputPlaceholder": "What's task today",
+   "taskButton": "Add Task"
 }
