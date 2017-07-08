@@ -1,9 +1,6 @@
 import React from 'react'
-import { View, ListView, Text, Switch, ScrollView } from 'react-native'
+import { View, Text, Switch, ScrollView } from 'react-native'
 import { connect } from 'react-redux'
-
-// For empty lists
-import AlertMessage from '../Components/AlertMessage'
 
 // Styles
 import styles from './Styles/SettingScreenStyles'
@@ -13,9 +10,9 @@ class SettingScreen extends React.Component {
     super(props)
 
     this.dataObjects = {
-      profile: { name: 'Peter Shodeinde', email: 'petershodeinde4@gmail.com'},
+      profile: { name: 'Peter Shodeinde', email: 'petershodeinde4@gmail.com' },
       appVersion: { name: 'App Version', version: '1.10.2' },
-      setting: {name: 'Push Notification', description: '(Comments, Tasks, Mentions)'},
+      setting: { name: 'Push Notification', description: '(Comments, Tasks, Mentions)' },
       information: [
         { name: 'Legal & Privacy' },
         { name: 'Send us feedback' }

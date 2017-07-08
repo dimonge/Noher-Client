@@ -4,7 +4,6 @@ import {
   TextInput,
   Text,
   TouchableOpacity,
-  Keyboard,
   ScrollView
 } from 'react-native'
 import { connect } from 'react-redux'
@@ -16,8 +15,8 @@ import {
 import FullButton from '../Components/FullButton'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scrollview'
 class AddTaskScreen extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     const groups = [
       { name: 'Home', color: Colors.fire },
       { name: 'Work', color: Colors.facebook },
@@ -28,7 +27,7 @@ class AddTaskScreen extends React.Component {
       groups: groups
     }
   }
-  renderGroup() {
+  renderGroup () {
     return this.state.groups.map(group => {
       return (
         <TouchableOpacity key={group.name} style={styles.groupStyle} onPress={this.props.onPress}>
@@ -39,25 +38,25 @@ class AddTaskScreen extends React.Component {
     })
   }
   // Text input field { horizantal scrolling buttons}
-  render() {
+  render () {
     return (
       <KeyboardAwareScrollView
-        keyboardDismissMode="interactive"
+        keyboardDismissMode='interactive'
         keyboardShouldPersistTaps={false}
         getTextInputRefs={() => {
-         return [this._taskInput];
+          return [this._taskInput]
         }}
         style={styles.container}>
         <View style={styles.textInputContainer}>
           <TextInput
             style={styles.taskInput}
             placeholder={I18n.t('taskInputPlaceholder')}
-            //onSubmitEditing={}
+            // onSubmitEditing={}
             autoFocus
             placeholderTextColor={Colors.lightgray}
             multiline
-            numberOfLines = {4}
-            ref={(r) => { this._taskInput = r; }}
+            numberOfLines={4}
+            ref={(r) => { this._taskInput = r }}
             />
         </View>
         <ScrollView
@@ -67,11 +66,10 @@ class AddTaskScreen extends React.Component {
           {this.renderGroup()}
         </ScrollView>
         <View style={styles.buttonStyle}>
-          <FullButton text={I18n.t('taskButton')}/>
+          <FullButton text={I18n.t('taskButton')} />
         </View>
       </KeyboardAwareScrollView>
     )
-
   }
 }
 

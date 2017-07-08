@@ -22,9 +22,7 @@ const navigatorStyle = {
   drawUnderTabBar: true
 }
 
-
 export default class NavigationTab extends React.Component {
-
   constructor (props) {
     super(props)
     iconsLoaded.then(() => {

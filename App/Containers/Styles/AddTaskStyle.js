@@ -18,7 +18,7 @@ export default StyleSheet.create({
   taskInput: {
     ...Fonts.style.h5,
     height: Metrics.doubleSection * 2,
-    lineHeight: Metrics.doubleBaseMargin / 4,
+    lineHeight: Metrics.doubleBaseMargin / 4
 
   },
   noContent: {
@@ -48,13 +48,13 @@ export default StyleSheet.create({
     marginTop: Metrics.baseMargin,
     marginBottom: Metrics.baseMargin,
     marginLeft: Metrics.baseMargin,
-    marginRight: Metrics.baseMargin,
+    marginRight: Metrics.baseMargin
   },
   groupLabel: {
     ...Fonts.style.normal
   },
   buttonStyle: {
-    //flex: 1,
+    // flex: 1,
     justifyContent: 'flex-end'
   }
 })
