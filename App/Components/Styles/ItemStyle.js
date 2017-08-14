@@ -24,9 +24,10 @@ export default StyleSheet.create({
     paddingRight: Metrics.itemHeight
   },
   checkbox: {
-    height: 15,
-    width: 15,
-    borderWidth: 2,
+    height: Metrics.doubleBaseMargin - 4,
+    width: Metrics.doubleBaseMargin - 4,
+    borderRadius: (Metrics.doubleBaseMargin - 4) / 2,
+    borderWidth: 1,
     borderColor: Colors.border
   },
   taskStyle: {
@@ -36,5 +37,12 @@ export default StyleSheet.create({
     marginTop: Metrics.baseMargin,
     marginBottom: Metrics.baseMargin
     // flex: 0.75
+  },
+  fillCircle: {
+    backgroundColor: Colors.lightgray
+  },
+  completedText: {
+    textDecorationColor: Colors.scroll,
+    textDecorationLine: 'line-through'
   }
 })

@@ -15,7 +15,6 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   listContent: {
-    flex: 1,
     flexDirection: 'column',
     flexWrap: 'wrap',
     backgroundColor: Colors.background

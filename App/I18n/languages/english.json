@@ -24,6 +24,8 @@
    "noItems": "No Items",
    "search": "Search",
    "noTask": "No more tasks for today",
-   "taskInputPlaceholder": "What's task today",
-   "taskButton": "Add Task"
+   "taskInputPlaceholder": "What's your task today?",
+   "taskButton": "Add Task",
+   "plus": "+",
+   "add": "Add"
 }

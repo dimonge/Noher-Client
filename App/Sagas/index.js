@@ -15,7 +15,7 @@ import { TodosTypes } from '../Redux/TodosRedux'
 
 //  import { startup } from './StartupSagas'
 //  import { login } from './LoginSagas'
-import { getTodos } from './TodosSagas'
+import { getTodoList, /* postTodo, putTodo, */ deleteTodo } from './TodosSagas'
 //  import { getUserAvatar } from './GithubSagas'
 //  import { openScreen } from './OpenScreenSagas'
 
@@ -36,6 +36,10 @@ export default function * root () {
 
     // some sagas receive extra parameters in addition to an action
     // takeLatest(GithubTypes.USER_REQUEST, getUserAvatar, api),
-    takeLatest(TodosTypes.TODOS_REQUEST, getTodos, api)
+
+    takeLatest(TodosTypes.TODOS_REQUEST, getTodoList, api),
+    // takeLatest(TodosTypes.ADD_TODO, postTodo, api),
+   // takeLatest(TodosTypes.UPDATE_TODO, putTodo, api),
+    takeLatest(TodosTypes.DELETE_TODO, deleteTodo, api)
   ]
 }

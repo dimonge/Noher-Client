@@ -6,39 +6,48 @@
   "items": [
     {
       "id": 68273,
-      "task": "Buy rice from K-market"
+      "task": "Buy rice from K-market",
+      "completed": false
     },
     {
       "id": 21302,
-      "task": "Tooth paste"
+      "task": "Tooth paste",
+      "completed": false
     },
     {
       "id": 134314,
-      "task": "Give 10 euros to Sis"
+      "task": "Give 10 euros to Sis",
+      "completed": false
     },
     {
       "id": 413414,
-      "task": "Watch movies on saturday and travel to kuopio on Monday, travel to kuopio on Monday"
+      "task": "Watch movies on saturday and travel to kuopio on Monday, travel to kuopio on Monday",
+      "completed": false
     },
     {
       "id": 3141454,
-      "task": "Travel on Saturday"
+      "task": "Travel on Saturday",
+      "completed": false
     },
     {
       "id": 123124,
-      "task": "Pay tithe"
+      "task": "Pay tithe",
+      "completed": false
     },
     {
       "id": 13148,
-      "task": "Move to new apartment"
+      "task": "Move to new apartment",
+      "completed": false
     },
     {
       "id": 1431431,
-      "task": "Host the church event"
+      "task": "Host the church event",
+      "completed": false
     },
     {
       "id": 6827313,
-      "task": "Call Mom"
+      "task": "Call Mom",
+      "completed": false
     }
   ]
 }

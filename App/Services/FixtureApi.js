@@ -1,5 +1,6 @@
 export default {
   // Functions return fixtures
+  /*
   getRoot: () => {
     return {
       ok: true,
@@ -21,11 +22,20 @@ export default {
       data: username.toLowerCase() === 'gantman' ? gantmanData : skellockData
     }
   },
-  getTodos: () => {
+  */
+  getTodoList: () => {
     const todos = require('../Fixtures/todos.json')
     return {
       ok: true,
       data: todos
     }
   }
+  /*
+  putTodoList: (id, payload) => {
+    return {
+      ok: true
+    }
+  }
+  */
+
 }

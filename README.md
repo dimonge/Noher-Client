@@ -1,5 +1,20 @@
 #  MyTodo
+## API
+* API endpoints
+    - /list
+      - GET, POST, DELETE
+    - /todos
+      - GET, POST
+      - /{id}
+        - PUT/POST, DELETE
+      - /todos/today
+        - GET
+* curl -X GET -H "X-Parse-Application-Id: todo-app-0010" -H "Content-Type: application/json" https://thawing-retreat-22933.herokuapp.com/parse/classes/GameScore
+
+* curl -X POST -H "X-Parse-Application-Id: todo-app-0010" -H "Content-Type: application/json" -d '{"score":1337,"playerName":"Sean Plott","cheatMode":false}' https://thawing-retreat-22933.herokuapp.com/parse/classes/GameScore
+
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+https://github.com/facebook/react-native/issues/913
 
 * Standard compliant React Native App Utilizing [Ignite](https://github.com/infinitered/ignite)
 
@@ -61,7 +76,6 @@ Secrets.GOOGLE_MAPS_API_KEY  // 'abcdefgh'
 The `.env` file is ignored by git keeping those secrets out of your repo.
 
 
-# Rewrite the navigation logic with store using 
+# Rewrite the navigation logic with store using
   # https://github.com/junedomingo/movieapp/blob/master/src/app.ios.js
   # https://wix.github.io/react-native-navigation/#/usage
-

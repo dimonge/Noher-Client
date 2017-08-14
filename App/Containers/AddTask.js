@@ -14,6 +14,7 @@ import {
 } from '../Themes'
 import FullButton from '../Components/FullButton'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scrollview'
+
 class AddTaskScreen extends React.Component {
   constructor (props) {
     super(props)

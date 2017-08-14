@@ -56,14 +56,14 @@ export default class NavigationTab extends React.Component {
             ]
           }
         },
-        {
+        /* {
           // label: 'Add Item',
           screen: 'maTodo.AddTask',
           icon: require('../Images/add-circle-outline.png'),
           selectedIcon: require('../Images/add-circle.png'),
           title: 'Add New Task',
           navigatorStyle
-        },
+        }, */
         {
           // label: 'Add Item',
           screen: 'maTodo.Group',

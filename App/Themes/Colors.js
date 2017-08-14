@@ -23,7 +23,10 @@ const colors = {
   banner: '#5F3E63',
   text: '#E0D7E5',
   lightgray: '#d3d3d3',
-  button: '#1DE9B6'
+  button: '#1DE9B6',
+  checkbox: '#6cb100',
+  scroll: '#767678',
+  addCircle: 'rgb(45, 109, 239)'
 }
 
 export default colors

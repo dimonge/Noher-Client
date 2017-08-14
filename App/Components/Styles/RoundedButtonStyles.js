@@ -12,7 +12,6 @@ export default StyleSheet.create({
   },
   buttonText: {
     color: Colors.snow,
-    textAlign: 'center',
     fontWeight: 'bold',
     fontSize: Fonts.size.medium,
     marginVertical: Metrics.baseMargin
