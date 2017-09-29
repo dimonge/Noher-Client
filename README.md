@@ -1,24 +1,16 @@
-#  MyTodo
+#  Noher App
 ## API
-* API endpoints
-    - /list
-      - GET, POST, DELETE
-    - /todos
-      - GET, POST
-      - /{id}
-        - PUT/POST, DELETE
-      - /todos/today
-        - GET
-* curl -X GET -H "X-Parse-Application-Id: todo-app-0010" -H "Content-Type: application/json" https://thawing-retreat-22933.herokuapp.com/parse/classes/GameScore
+* Used mock data from the Mescedes Benz challenge. These includes
+  - Diagonistics
+  - Vehicle location
+  - Charging Status
+  - Maintenance information
+  In future development. I plan to add interactive actions like
+    - Starting the engine
+    - Locking the car
 
-* curl -X POST -H "X-Parse-Application-Id: todo-app-0010" -H "Content-Type: application/json" -d '{"score":1337,"playerName":"Sean Plott","cheatMode":false}' https://thawing-retreat-22933.herokuapp.com/parse/classes/GameScore
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
-https://github.com/facebook/react-native/issues/913
-
-* Standard compliant React Native App Utilizing [Ignite](https://github.com/infinitered/ignite)
-
-## :arrow_up: How to Setup
+## How to Setup
 
 **Step 1:** git clone this repo:
 
@@ -26,8 +18,7 @@ https://github.com/facebook/react-native/issues/913
 
 **Step 3:** Install the Application with `npm install`
 
-
-## :arrow_forward: How to Run App
+## How to Run App
 
 1. cd to the repo
 2. Run Build for either OS
@@ -36,46 +27,3 @@ https://github.com/facebook/react-native/issues/913
   * for Android
     * Run Genymotion
     * run `react-native run-android`
-
-## :no_entry_sign: Standard Compliant
-
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-This project adheres to Standard.  Our CI enforces this, so we suggest you enable linting to keep your project compliant during development.
-
-**To Lint on Commit**
-
-This is implemented using [ghooks](https://github.com/gtramontina/ghooks). There is no additional setup needed.
-
-**Bypass Lint**
-
-If you have to bypass lint for a special commit that you will come back and clean (pushing something to a branch etc.) then you can bypass git hooks with adding `--no-verify` to your commit command.
-
-**Understanding Linting Errors**
-
-The linting rules are from JS Standard and React-Standard.  [Regular JS errors can be found with descriptions here](http://eslint.org/docs/rules/), while [React errors and descriptions can be found here](https://github.com/yannickcr/eslint-plugin-react).
-
-## :closed_lock_with_key: Secrets
-
-This project uses [react-native-config](https://github.com/luggit/react-native-config) to expose config variables to your javascript code in React Native. You can store API keys
-and other sensitive information in a `.env` file:
-
-```
-API_URL=https://myapi.com
-GOOGLE_MAPS_API_KEY=abcdefgh
-```
-
-and access them from React Native like so:
-
-```
-import Secrets from 'react-native-config'
-
-Secrets.API_URL  // 'https://myapi.com'
-Secrets.GOOGLE_MAPS_API_KEY  // 'abcdefgh'
-```
-
-The `.env` file is ignored by git keeping those secrets out of your repo.
-
-
-# Rewrite the navigation logic with store using
-  # https://github.com/junedomingo/movieapp/blob/master/src/app.ios.js
-  # https://wix.github.io/react-native-navigation/#/usage
