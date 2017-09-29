@@ -5,9 +5,11 @@
   - Vehicle location
   - Charging Status
   - Maintenance information
-  In future development. I plan to add interactive actions like
+
+  In future developments, I plan to add interactive actions like
     - Starting the engine
     - Locking the car
+    - Notifications that provides information to the user when necessary
 
 
 ## How to Setup
