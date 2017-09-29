@@ -12,6 +12,12 @@
     - Notifications that provides information to the user when necessary
 
 
+## To install
+
+I have added the Noher.ipa file to be installed on an iPhone (recommending an iPhone 6) for testing.
+
+## ALTERNATIVE
+
 ## How to Setup
 
 **Step 1:** git clone this repo:
